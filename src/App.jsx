@@ -103,9 +103,10 @@ const Button = ({ children, variant = "primary", className = "", onClick }) => {
 };
 
 const Card = ({ children, className = "" }) => (
-  <div className={`rounded-[2rem] border border-[#14213d]/10 bg-white/70 shadow-sm ${className}`}>{children}</div>
-  );
-};
+  <div className={`rounded-[2rem] border border-[#14213d]/10 bg-white/70 shadow-sm ${className}`}>
+    {children}
+  </div>
+);
 
 const content = {
   en: {
@@ -486,39 +487,40 @@ const content = {
 };
 
 const Portrait = ({ person, labels, index }) => {
-  const imagePosition = ["center 18%", "center 12%", "center 8%"];
+  const imagePosition = ["center 18%", "center 12%", "center 8%"]; 
 
   return (
-  <div className="rounded-[2rem] border border-[#14213d]/10 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-    <div className="mb-6 overflow-hidden rounded-[1.75rem] border border-[#14213d]/10 bg-[#1d3b73] shadow-sm">
-      <img
-        src={person.image}
-        alt={person.name}
-        className="h-[420px] w-full object-cover scale-[1.04]"
-        style={{ objectPosition: imagePosition[index] || "center top" }}
-        onError={(event) => {
-          event.currentTarget.style.display = "none";
-          const fallback = event.currentTarget.nextElementSibling;
-          if (fallback) fallback.style.display = "flex";
-        }}
-      />
-      <div className="hidden h-[340px] w-full items-center justify-center bg-gradient-to-br from-[#14213d] to-[#31558e] text-center text-white">
-        <div>
-          <div className="text-4xl font-semibold tracking-wide">{person.name.slice(0, 2)}</div>
-          <div className="mt-3 text-xs uppercase tracking-[0.25em] text-white/55">{labels.portrait}</div>
+    <div className="rounded-[2rem] border border-[#14213d]/10 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+      <div className="mb-6 overflow-hidden rounded-[1.75rem] border border-[#14213d]/10 bg-[#1d3b73] shadow-sm">
+        <img
+          src={person.image}
+          alt={person.name}
+          className="h-[420px] w-full object-cover scale-[1.04]"
+          style={{ objectPosition: imagePosition[index] || "center top" }}
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+            const fallback = event.currentTarget.nextElementSibling;
+            if (fallback) fallback.style.display = "flex";
+          }}
+        />
+        <div className="hidden h-[420px] w-full items-center justify-center bg-gradient-to-br from-[#14213d] to-[#31558e] text-center text-white">
+          <div>
+            <div className="text-4xl font-semibold tracking-wide">{person.name.slice(0, 2)}</div>
+            <div className="mt-3 text-xs uppercase tracking-[0.25em] text-white/55">{labels.portrait}</div>
+          </div>
         </div>
       </div>
+      <div className="text-2xl font-semibold">{person.name}</div>
+      <div className="mt-2 text-sm uppercase tracking-[0.18em] text-[#d6a94f]">{person.role}</div>
+      <div className="mt-5 text-sm leading-7 text-[#14213d]/70">{person.summary}</div>
+      <div className="mt-6 space-y-3 border-t border-[#14213d]/10 pt-5 text-sm text-[#14213d]/65">
+        <div><span className="font-semibold text-[#14213d]">{labels.education}</span> {person.education}</div>
+        <div><span className="font-semibold text-[#14213d]">{labels.degree}</span> {person.degree}</div>
+        <div><span className="font-semibold text-[#14213d]">{labels.focus}</span> {person.focus}</div>
+      </div>
     </div>
-    <div className="text-2xl font-semibold">{person.name}</div>
-    <div className="mt-2 text-sm uppercase tracking-[0.18em] text-[#d6a94f]">{person.role}</div>
-    <div className="mt-5 text-sm leading-7 text-[#14213d]/70">{person.summary}</div>
-    <div className="mt-6 space-y-3 border-t border-[#14213d]/10 pt-5 text-sm text-[#14213d]/65">
-      <div><span className="font-semibold text-[#14213d]">{labels.education}</span> {person.education}</div>
-      <div><span className="font-semibold text-[#14213d]">{labels.degree}</span> {person.degree}</div>
-      <div><span className="font-semibold text-[#14213d]">{labels.focus}</span> {person.focus}</div>
-    </div>
-  </div>
-);
+  );
+};
 
 export default function TranspacWebsite() {
   const [lang, setLang] = useState("en");
@@ -892,3 +894,4 @@ const SectionIntro = ({ label, title, desc }) => (
     {desc ? <p className="mt-5 text-lg leading-8 text-[#14213d]/65">{desc}</p> : null}
   </div>
 );
+
