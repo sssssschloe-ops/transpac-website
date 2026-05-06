@@ -490,7 +490,7 @@ const Portrait = ({ person, labels, index }) => (
       <img
         src={person.image}
         alt={person.name}
-        className={`h-[340px] w-full object-cover ${index === 2 ? "object-top" : "object-center"}`}
+        className="h-[380px] w-full object-cover object-top scale-[1.02]"
         onError={(event) => {
           event.currentTarget.style.display = "none";
           const fallback = event.currentTarget.nextElementSibling;
@@ -887,3 +887,4 @@ const SectionIntro = ({ label, title, desc }) => (
     {desc ? <p className="mt-5 text-lg leading-8 text-[#14213d]/65">{desc}</p> : null}
   </div>
 );
+
