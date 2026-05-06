@@ -104,7 +104,8 @@ const Button = ({ children, variant = "primary", className = "", onClick }) => {
 
 const Card = ({ children, className = "" }) => (
   <div className={`rounded-[2rem] border border-[#14213d]/10 bg-white/70 shadow-sm ${className}`}>{children}</div>
-);
+  );
+};
 
 const content = {
   en: {
@@ -484,13 +485,17 @@ const content = {
   }
 };
 
-const Portrait = ({ person, labels, index }) => (
+const Portrait = ({ person, labels, index }) => {
+  const imagePosition = ["center 18%", "center 12%", "center 8%"];
+
+  return (
   <div className="rounded-[2rem] border border-[#14213d]/10 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
     <div className="mb-6 overflow-hidden rounded-[1.75rem] border border-[#14213d]/10 bg-[#1d3b73] shadow-sm">
       <img
         src={person.image}
         alt={person.name}
-        className="h-[380px] w-full object-cover object-top scale-[1.02]"
+        className="h-[420px] w-full object-cover scale-[1.04]"
+        style={{ objectPosition: imagePosition[index] || "center top" }}
         onError={(event) => {
           event.currentTarget.style.display = "none";
           const fallback = event.currentTarget.nextElementSibling;
@@ -887,4 +892,3 @@ const SectionIntro = ({ label, title, desc }) => (
     {desc ? <p className="mt-5 text-lg leading-8 text-[#14213d]/65">{desc}</p> : null}
   </div>
 );
-
