@@ -167,8 +167,19 @@ const content = {
         title: "Event Planning & Project Management",
         desc: "We plan and execute forums, galas, screenings, cultural festivals, business events, and sponsorship campaigns.",
         items: ["Forums & receptions", "Cultural events", "Sponsorship decks", "Project execution"]
-      }
-    ],
+      },
+{
+  icon: "business",
+  title: "International Business & Supply Chain Solutions",
+  desc: "We support cross-border sourcing, supplier coordination, procurement planning, project implementation, and international business partnerships across the United States and Asia.",
+  items: [
+    "Supplier sourcing",
+    "Procurement advisory",
+    "Restaurant & hospitality projects",
+    "Senior living project support"
+  ]
+}
+],
     aboutLabel: "About TransPac",
     aboutTitle: "A consulting partner for a more connected market.",
     aboutP1:
@@ -357,8 +368,19 @@ const content = {
         title: "活动策划与项目执行",
         desc: "我们策划并执行论坛、晚宴、展映、文化节、商务活动与赞助合作方案。",
         items: ["论坛与招待会", "文化活动", "赞助方案", "项目执行"]
-      }
-    ],
+      },
+{
+  icon: "business",
+  title: "国际商务与供应链解决方案",
+  desc: "我们支持跨境采购、供应商对接、采购规划、项目落地及国际商务合作，服务餐饮、养老、酒店、商业空间及相关设施项目。",
+  items: [
+    "供应商资源对接",
+    "采购咨询",
+    "餐饮与酒店项目",
+    "养老项目支持"
+  ]
+}
+],
     aboutLabel: "关于 TransPac",
     aboutTitle: "连接市场与机会的咨询伙伴。",
     aboutP1:
@@ -528,8 +550,8 @@ export default function TranspacWebsite() {
   const isZh = lang === "zh";
 
   const tests = useMemo(() => {
-    console.assert(content.en.services.length === 4, "Expected four English services");
-    console.assert(content.zh.services.length === 4, "Expected four Chinese services");
+    console.assert(content.en.services.length === 5, "Expected four English services");
+    console.assert(content.zh.services.length === 5, "Expected four Chinese services");
     console.assert(content.en.leaders.length === 3, "Expected three English leaders");
     console.assert(content.zh.leaders.length === 3, "Expected three Chinese leaders");
     console.assert(Object.values(TEAM_IMAGES).every((path) => typeof path === "string" && path.startsWith("/")), "Team image paths must be public-root paths");
