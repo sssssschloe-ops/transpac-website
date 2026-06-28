@@ -552,7 +552,7 @@ heroSub:
     ctaTitle: "帮助机构完成跨境增长、采购、贸易与项目执行。",
     ctaDesc: "从战略规划、供应商寻源到采购、物流、品牌传播与项目实施，TransPac 为客户提供实用的跨境解决方案。",
     contactLabel: "联系",
-    formTitle: "准备拓展国际市场？"
+    formTitle: "准备拓展国际市场？",
     formDesc: "告诉我们你的机构、贸易需求、采购计划或项目方向。TransPac 可以帮助你梳理战略、匹配资源并推进下一步执行。",
     formName: "姓名",
     formEmail: "邮箱",
