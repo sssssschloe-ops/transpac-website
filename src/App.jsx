@@ -115,22 +115,22 @@ const content = {
     logoSubtitle: "Boutique Advisory · Washington, D.C.",
     logoAccent: "Minimal executive identity for international consulting",
     start: "Start a Project",
-    badge: "Strategic Consulting for U.S. & Global Opportunities",
+    badge: "Strategic Consulting • International Trade • Project Delivery",
     heroTitle: "Connecting Strategy, Trade, and Global Opportunities.",
     heroDesc:
-      "TransPac Inc. is a U.S.-based consulting and international trade company helping organizations expand, source, build, and grow across North America and Asia. strategic advisory, education consulting, market research, business expansion, branding strategy, and high-level project execution.",
+"TransPac Inc. is a U.S.-based strategic consulting and international trade company helping organizations expand globally through business advisory, cross-border sourcing, procurement, supply chain coordination, and project delivery."
     heroSub:
-      "We help organizations build long-term growth, international partnerships, and professional market presence through strategy and execution.",
+      "We deliver practical solutions that connect strategy with execution, enabling organizations to grow through consulting, international trade, and cross-border partnerships."
     explore: "Explore Services",
     contact: "Contact Us",
     core: "Core Advantages",
     strategy: "Strategy + Execution",
     stats: [
-      ["Washington, D.C.", "Headquarters"],
-      ["U.S. & Global", "Project Scope"],
-      ["Education + Consulting", "Core Sectors"],
-      ["Bilingual", "English & Chinese Services"]
-    ],
+["Washington, D.C.","Headquarters"],
+["North America & Asia","Global Network"],
+["Consulting + Trade","Core Services"],
+["End-to-End","Project Delivery"]
+]
     strengths: [
       "U.S. market insight and local information consulting",
       "Cross-border business and education expertise",
@@ -316,7 +316,7 @@ const content = {
     logoSubtitle: "精品咨询 · 华盛顿特区",
     logoAccent: "面向机构客户的极简高端咨询品牌识别",
     start: "开始项目",
-    badge: "美国与全球机会战略咨询",
+    badge: "战略咨询 · 国际贸易 · 项目落地",
     heroTitle: "连接战略、贸易与全球机遇。",
     heroDesc:
       "TransPac Inc. 是一家总部位于美国的国际咨询与国际贸易公司，为客户提供战略咨询、跨境采购、国际贸易、供应链管理及项目落地服务，助力企业拓展北美及亚洲市场。，专注于战略咨询、教育咨询、市场调研、商业拓展、品牌战略与高端项目执行。",
@@ -327,11 +327,11 @@ const content = {
     core: "核心优势",
     strategy: "战略 + 执行",
     stats: [
-      ["华盛顿特区", "公司总部"],
-      ["美国与全球", "项目范围"],
-      ["教育 + 咨询", "核心领域"],
-      ["双语服务", "英文与中文"]
-    ],
+["华盛顿特区","总部"],
+["北美 · 亚洲","全球网络"],
+["咨询 + 国际贸易","核心业务"],
+["全流程","项目交付"]
+]
     strengths: [
       "美国本土市场洞察与信息咨询能力",
       "跨境商业与国际教育项目经验",
