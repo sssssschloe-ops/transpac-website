@@ -116,9 +116,9 @@ const content = {
     logoAccent: "Minimal executive identity for international consulting",
     start: "Start a Project",
     badge: "Strategic Consulting for U.S. & Global Opportunities",
-    heroTitle: "Connecting strategy, education, and international opportunity through modern consulting.",
+    heroTitle: "Connecting Strategy, Trade, and Global Opportunities.",
     heroDesc:
-      "TransPac Inc. is a Washington, D.C.-based international consulting firm focused on strategic advisory, education consulting, market research, business expansion, branding strategy, and high-level project execution.",
+      "TransPac Inc. is a U.S.-based consulting and international trade company helping organizations expand, source, build, and grow across North America and Asia. strategic advisory, education consulting, market research, business expansion, branding strategy, and high-level project execution.",
     heroSub:
       "We help organizations build long-term growth, international partnerships, and professional market presence through strategy and execution.",
     explore: "Explore Services",
@@ -317,9 +317,9 @@ const content = {
     logoAccent: "面向机构客户的极简高端咨询品牌识别",
     start: "开始项目",
     badge: "美国与全球机会战略咨询",
-    heroTitle: "以现代咨询连接战略、教育与国际机会。",
+    heroTitle: "连接战略、贸易与全球机遇。",
     heroDesc:
-      "TransPac Inc. 是一家总部位于华盛顿特区的国际咨询公司，专注于战略咨询、教育咨询、市场调研、商业拓展、品牌战略与高端项目执行。",
+      "TransPac Inc. 是一家总部位于美国的国际咨询与国际贸易公司，为客户提供战略咨询、跨境采购、国际贸易、供应链管理及项目落地服务，助力企业拓展北美及亚洲市场。，专注于战略咨询、教育咨询、市场调研、商业拓展、品牌战略与高端项目执行。",
     heroSub:
       "我们帮助机构建立长期增长、国际合作伙伴关系与专业市场影响力，以战略与执行推动项目落地。",
     explore: "查看服务",
