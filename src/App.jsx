@@ -111,7 +111,7 @@ const Card = ({ children, className = "" }) => (
 const content = {
   en: {
     languageButton: "中文",
-    nav: ["Services", "Industries", "Trade", "Projects", "Process", "Insights", "Why Us", "Downloads", "Contact"],
+    nav: ["Services", "Industries", "Trade", "Projects", "Process", "Insights", "Why Us", "Contact"],
     logoSubtitle: "Strategic Consulting • International Trade • Washington, D.C.",
     logoAccent: "Minimal executive identity for international consulting",
     start: "Start a Project",
@@ -212,16 +212,6 @@ heroSub:
     networkDesc:
       "With a Washington, D.C. presence and cross-border business relationships, TransPac helps clients coordinate opportunities across the United States, China, Hong Kong, and broader international markets.",
     network: ["Washington, D.C.", "United States", "China", "Hong Kong", "Asia", "Global Partners"],
-    downloadsLabel: "Downloads",
-    downloadsTitle: "Business materials for partners and clients.",
-    downloadsDesc:
-      "Download-ready materials can be prepared for business meetings, proposals, trade discussions, and institutional partnership conversations.",
-    downloads: [
-      ["Company Profile", "Corporate overview, services, leadership, and contact information."],
-      ["Capability Statement", "One-page business capability summary for professional and institutional use."],
-      ["Trade Capability Brief", "International trade, sourcing, procurement, and logistics capability overview."],
-      ["Service Brochure", "Consulting, trade, procurement, branding, and project delivery service summary."]
-    ],
     aboutLabel: "About TransPac",
     aboutTitle: "A consulting partner for a more connected market.",
     aboutP1:
@@ -381,7 +371,7 @@ heroSub:
   },
   zh: {
     languageButton: "English",
-    nav: ["服务", "行业", "贸易", "案例", "流程", "洞察", "优势", "下载", "联系"],
+    nav: ["服务", "行业", "贸易", "案例", "流程", "洞察", "优势", "联系"],
     logoSubtitle: "战略咨询 · 国际贸易 · 华盛顿特区",
     logoAccent: "面向机构客户的极简高端咨询品牌识别",
     start: "开始项目",
@@ -482,16 +472,6 @@ heroSub:
     networkDesc:
       "TransPac 立足华盛顿特区，并依托跨境商业资源，帮助客户协调美国、中国、香港及更广泛国际市场中的合作机会。",
     network: ["华盛顿特区", "美国", "中国", "香港", "亚洲", "全球合作伙伴"],
-    downloadsLabel: "下载中心",
-    downloadsTitle: "面向合作伙伴与客户的商务资料。",
-    downloadsDesc:
-      "我们可为商务会面、项目提案、贸易洽谈及机构合作准备统一风格的企业资料。",
-    downloads: [
-      ["公司介绍", "公司概况、服务内容、管理团队与联系方式。"],
-      ["能力声明", "适用于专业客户及机构合作的一页式企业能力概览。"],
-      ["国际贸易能力介绍", "国际贸易、供应商寻源、采购及物流能力概览。"],
-      ["服务手册", "咨询、贸易、采购、品牌与项目落地服务摘要。"]
-    ],
     aboutLabel: "关于 TransPac",
     aboutTitle: "连接市场与机会的咨询伙伴。",
     aboutP1:
@@ -697,8 +677,6 @@ export default function TranspacWebsite() {
     console.assert(content.zh.tradeProcess.length === 8, "Expected eight Chinese trade process steps");
     console.assert(content.en.tradeCapabilities.length === 4, "Expected four English trade capabilities");
     console.assert(content.zh.tradeCapabilities.length === 4, "Expected four Chinese trade capabilities");
-    console.assert(content.en.downloads.length === 4, "Expected four English downloads");
-    console.assert(content.zh.downloads.length === 4, "Expected four Chinese downloads");
     console.assert(content.zh.leaders.length === 3, "Expected three Chinese leaders");
     console.assert(Object.values(TEAM_IMAGES).every((path) => typeof path === "string" && path.startsWith("/")), "Team image paths must be public-root paths");
     return true;
@@ -743,7 +721,7 @@ export default function TranspacWebsite() {
               {t.languageButton}
             </button>
             {t.nav.map((item, index) => {
-              const hrefs = ["#services", "#industries", "#trade", "#projects", "#process", "#insights", "#why", "#downloads", "#contact"];
+              const hrefs = ["#services", "#industries", "#trade", "#projects", "#process", "#insights", "#why", "#contact"];
               return <a key={item} href={hrefs[index]} className="hover:text-[#14213d]">{item}</a>;
             })}
           </nav>
@@ -1071,29 +1049,6 @@ export default function TranspacWebsite() {
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button className="bg-[#d6b36a] text-[#14213d] hover:bg-[#caa85f]">{t.contact}</Button>
               <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10">{t.explore}</Button>
-            </div>
-          </div>
-        </section>
-
-        <section id="downloads" className="bg-white px-6 py-20">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-              <div>
-                <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6a94f]">{t.downloadsLabel}</div>
-                <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">{t.downloadsTitle}</h2>
-              </div>
-              <p className="max-w-xl text-base leading-7 text-[#14213d]/60">{t.downloadsDesc}</p>
-            </div>
-            <div className="grid gap-5 md:grid-cols-4">
-              {t.downloads.map(([title, desc]) => (
-                <div key={title} className="rounded-[2rem] border border-[#14213d]/10 bg-[#f8f5ef] p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-[#14213d] text-white">
-                    <Icon type="spark" size={18} />
-                  </div>
-                  <h3 className="text-lg font-semibold">{title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-[#14213d]/60">{desc}</p>
-                </div>
-              ))}
             </div>
           </div>
         </section>
