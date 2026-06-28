@@ -361,7 +361,7 @@ heroSub:
     ctaDesc:
       "From strategy and sourcing to procurement, logistics, branding, and implementation, TransPac supports clients with practical cross-border solutions.",
     contactLabel: "Contact & Inquiry",
-    formTitle: "Ready to work together?"
+    formTitle: "Ready to work together?",
     formDesc: "Tell us about your organization, trade inquiry, procurement need, or project plan. TransPac can help you shape the strategy, source the right partners, and execute the next step.",
     formName: "Name",
     formEmail: "Email",
@@ -620,7 +620,7 @@ heroSub:
     ctaTitle: "帮助机构完成跨境增长、采购、贸易与项目执行。",
     ctaDesc: "从战略规划、供应商寻源到采购、物流、品牌传播与项目实施，TransPac 为客户提供实用的跨境解决方案。",
     contactLabel: "联系与咨询",
-    formTitle: "准备开始合作？"
+    formTitle: "准备开始合作？",
     formDesc: "告诉我们你的机构、贸易需求、采购计划或项目方向。TransPac 可以帮助你梳理战略、匹配资源并推进下一步执行。",
     formName: "姓名",
     formEmail: "邮箱",
