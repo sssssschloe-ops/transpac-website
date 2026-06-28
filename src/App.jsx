@@ -118,9 +118,9 @@ const content = {
     badge: "Strategic Consulting • International Trade • Project Delivery",
     heroTitle: "Connecting Strategy, Trade, and Global Opportunities.",
     heroDesc:
-"TransPac Inc. is a U.S.-based strategic consulting and international trade company helping organizations expand globally through business advisory, international trade, global sourcing, procurement management, supply chain coordination, and project delivery.",
+      "TransPac Inc. is a U.S.-based strategic consulting and international trade company helping organizations expand globally through business advisory, international trade, global sourcing, procurement management, supply chain coordination, and project delivery.",
 heroSub:
-"We transform strategy into execution by combining consulting expertise, international trade capabilities, and end-to-end project management to support sustainable global growth.",
+      "We transform strategy into execution by combining consulting expertise, international trade capabilities, and end-to-end project management to support sustainable global growth.",
     explore: "Explore Services",
     contact: "Contact Us",
     core: "Core Advantages",
@@ -140,46 +140,47 @@ heroSub:
       "Strategic partnership and regional market network"
     ],
     servicesLabel: "Services",
-    servicesTitle: "What we consult on",
+    servicesTitle: "Integrated consulting, trade, and project services",
     servicesDesc:
-      "Our services are designed for educational institutions, businesses, government organizations, nonprofit organizations, founders, and project teams seeking strategic support in the U.S. and international markets.",
+      "TransPac supports clients across strategy, international trade, procurement, commercial development, education, and branding. Our work connects planning with execution so organizations can expand, source, build, and grow across North America and Asia.",
     services: [
       {
-        icon: "education",
-        title: "Education & Cultural Exchange Consulting",
-        desc: "We design international education programs, student exchange experiences, school partnerships, and cultural learning projects.",
-        items: ["Student study tours", "School partnership programs", "International education projects", "Cultural exchange design"]
+        icon: "business",
+        title: "Strategy & Business Advisory",
+        desc: "We help organizations evaluate markets, design growth strategies, identify partners, and structure practical expansion plans.",
+        items: ["Market entry strategy", "Business development", "Partner matching", "Feasibility research"]
+      },
+      {
+        icon: "globe",
+        title: "International Trade",
+        desc: "We support global product sourcing, commercial sales, OEM/ODM manufacturing, import and export coordination, and trade documentation.",
+        items: ["Global sourcing", "OEM / ODM", "Commercial sales", "Trade documentation"]
       },
       {
         icon: "business",
-        title: "Market Entry & Business Consulting",
-        desc: "We help organizations understand the U.S. market, develop business plans, and build practical growth strategies.",
-        items: ["U.S. market research", "Business plan development", "Partner matching", "Market entry strategy"]
+        title: "Procurement & Supply Chain",
+        desc: "We coordinate suppliers, procurement planning, logistics support, shipping options, vendor communication, and delivery execution.",
+        items: ["Supplier verification", "Procurement planning", "DDP / FOB logistics", "Delivery coordination"]
+      },
+      {
+        icon: "event",
+        title: "Commercial Development",
+        desc: "We support commercial projects including restaurants, hospitality, senior living, retail, office spaces, equipment procurement, and FF&E planning.",
+        items: ["Restaurant projects", "Hospitality spaces", "Senior living facilities", "Commercial equipment"]
+      },
+      {
+        icon: "education",
+        title: "Education & Cultural Exchange",
+        desc: "We design international education programs, student exchange experiences, institutional partnerships, and cultural learning projects.",
+        items: ["Student study tours", "School partnerships", "International programs", "Cultural exchange"]
       },
       {
         icon: "media",
         title: "Branding & Media Strategy",
-        desc: "We support brands with positioning, bilingual content, media strategy, video production, and social media growth.",
-        items: ["Brand positioning", "Bilingual content", "Promotional videos", "Social media strategy"]
-      },
-      {
-        icon: "event",
-        title: "Event Planning & Project Management",
-        desc: "We plan and execute forums, galas, screenings, cultural festivals, business events, and sponsorship campaigns.",
-        items: ["Forums & receptions", "Cultural events", "Sponsorship decks", "Project execution"]
-      },
-{
-  icon: "business",
-  title: "International Business & Supply Chain Solutions",
-  desc: "We support cross-border sourcing, supplier coordination, procurement planning, project implementation, and international business partnerships across the United States and Asia.",
-  items: [
-    "Supplier sourcing",
-    "Procurement advisory",
-    "Restaurant & hospitality projects",
-    "Senior living project support"
-  ]
-}
-],
+        desc: "We support brands with positioning, bilingual content, media strategy, video production, public communication, and digital growth.",
+        items: ["Brand positioning", "Bilingual content", "Promotional videos", "Public communication"]
+      }
+    ],
     aboutLabel: "About TransPac",
     aboutTitle: "A consulting partner for a more connected market.",
     aboutP1:
@@ -305,10 +306,10 @@ heroSub:
     formEmail: "Email",
     formCompany: "Company / Organization",
     formMessage: "Tell us briefly about your project or question.",
-    serviceOptions: ["Education & Cultural Exchange", "Market Entry & Business Consulting", "Branding & Media Strategy", "Event Planning & Project Management", "Not sure yet"],
+    serviceOptions: ["Strategy & Business Advisory", "International Trade", "Procurement & Supply Chain", "Commercial Development", "Education & Cultural Exchange", "Branding & Media", "Not sure yet"],
     formNote:
       "This form is currently designed as a professional consultation inquiry module. The live production version can later be connected to email systems, CRM platforms, or direct scheduling tools as the company expands.",
-    footerServices: "Educational Technology · Strategic Consulting · Market Research · Branding · Cross-Border Business"
+    footerServices: "Strategic Consulting · International Trade · Procurement · Project Delivery · Branding"
   },
   zh: {
     languageButton: "English",
@@ -319,7 +320,7 @@ heroSub:
     badge: "战略咨询 · 国际贸易 · 项目落地",
     heroTitle: "连接战略、贸易与全球机遇。",
     heroDesc:
-      "TransPac Inc. 是一家总部位于美国的国际咨询与国际贸易公司，为客户提供战略咨询、跨境采购、国际贸易、供应链管理及项目落地服务，助力企业拓展北美及亚洲市场。，专注于战略咨询、教育咨询、市场调研、商业拓展、品牌战略与高端项目执行。",
+      "TransPac Inc. 是一家总部位于美国的国际咨询与国际贸易公司，为客户提供战略咨询、国际贸易、跨境采购、供应链管理及项目落地服务，助力企业拓展北美及亚洲市场。",
     heroSub:
       "我们帮助机构建立长期增长、国际合作伙伴关系与专业市场影响力，以战略与执行推动项目落地。",
     explore: "查看服务",
@@ -341,46 +342,47 @@ heroSub:
       "战略合作资源与区域市场网络"
     ],
     servicesLabel: "服务",
-    servicesTitle: "我们提供的咨询服务",
+    servicesTitle: "咨询、贸易与项目落地一体化服务",
     servicesDesc:
-      "我们的服务面向教育机构、企业、非营利组织、创业团队、政府相关机构与国际项目团队，为其在美国及国际市场提供战略支持。",
+      "TransPac 为客户提供战略咨询、国际贸易、跨境采购、商业项目开发、教育交流与品牌传播服务。我们将战略规划与实际执行结合，帮助客户拓展北美与亚洲市场。",
     services: [
       {
-        icon: "education",
-        title: "教育与文化交流咨询",
-        desc: "我们为学校、机构与国际项目团队设计学生访学、学校合作、文化交流与国际教育项目。",
-        items: ["学生访学项目", "学校合作项目", "国际教育项目", "文化交流设计"]
+        icon: "business",
+        title: "战略与商业咨询",
+        desc: "我们帮助机构评估市场、制定增长战略、寻找合作伙伴，并搭建可执行的跨境发展方案。",
+        items: ["市场进入战略", "商务拓展", "合作伙伴对接", "可行性研究"]
+      },
+      {
+        icon: "globe",
+        title: "国际贸易",
+        desc: "我们支持全球产品采购、商业销售、OEM/ODM 定制生产、进出口协调及国际贸易文件支持。",
+        items: ["全球采购", "OEM / ODM", "商业销售", "贸易文件"]
       },
       {
         icon: "business",
-        title: "市场进入与商业咨询",
-        desc: "我们帮助机构理解美国市场、制定商业计划、完善本土化策略并建立可执行的增长路径。",
-        items: ["美国市场调研", "商业计划书制定", "合作伙伴对接", "市场进入战略"]
-      },
-      {
-        icon: "media",
-        title: "品牌与媒体传播咨询",
-        desc: "我们为品牌提供定位、双语内容、媒体策略、视频传播与社交媒体增长支持。",
-        items: ["品牌定位", "中英文内容", "宣传视频", "社交媒体策略"]
+        title: "采购与供应链管理",
+        desc: "我们协助客户进行供应商管理、采购规划、国际物流、运输方式协调、供应商沟通及交付执行。",
+        items: ["供应商审核", "采购规划", "DDP / FOB 物流", "交付协调"]
       },
       {
         icon: "event",
-        title: "活动策划与项目执行",
-        desc: "我们策划并执行论坛、晚宴、展映、文化节、商务活动与赞助合作方案。",
-        items: ["论坛与招待会", "文化活动", "赞助方案", "项目执行"]
+        title: "商业项目开发",
+        desc: "我们支持餐饮、酒店、养老、零售、办公及商业空间项目，并提供设备采购、家具配置与 FF&E 规划支持。",
+        items: ["餐饮项目", "酒店空间", "养老设施", "商业设备"]
       },
-{
-  icon: "business",
-  title: "国际商务与供应链解决方案",
-  desc: "我们支持跨境采购、供应商对接、采购规划、项目落地及国际商务合作，服务餐饮、养老、酒店、商业空间及相关设施项目。",
-  items: [
-    "供应商资源对接",
-    "采购咨询",
-    "餐饮与酒店项目",
-    "养老项目支持"
-  ]
-}
-],
+      {
+        icon: "education",
+        title: "教育与文化交流",
+        desc: "我们为学校、机构与国际项目团队设计学生访学、学校合作、文化交流与国际教育项目。",
+        items: ["学生访学", "学校合作", "国际项目", "文化交流"]
+      },
+      {
+        icon: "media",
+        title: "品牌与媒体传播",
+        desc: "我们为品牌提供定位、双语内容、媒体策略、视频传播、公共沟通与数字化增长支持。",
+        items: ["品牌定位", "中英文内容", "宣传视频", "公共传播"]
+      }
+    ],
     aboutLabel: "关于 TransPac",
     aboutTitle: "连接市场与机会的咨询伙伴。",
     aboutP1:
@@ -502,9 +504,9 @@ heroSub:
     formEmail: "邮箱",
     formCompany: "公司 / 机构",
     formMessage: "请简单介绍你的项目或咨询需求。",
-    serviceOptions: ["教育与文化交流", "市场进入与商业咨询", "品牌与媒体传播", "活动策划与项目执行", "暂不确定"],
+    serviceOptions: ["战略与商业咨询", "国际贸易", "采购与供应链管理", "商业项目开发", "教育与文化交流", "品牌与媒体传播", "暂不确定"],
     formNote: "该表单目前为前端咨询入口模块。正式上线后，可连接企业邮箱、CRM 系统或其他客户管理工具。",
-    footerServices: "教育科技 · 战略咨询 · 市场调研 · 品牌传播 · 跨境商业"
+    footerServices: "战略咨询 · 国际贸易 · 跨境采购 · 项目落地 · 品牌传播"
   }
 };
 
@@ -550,8 +552,8 @@ export default function TranspacWebsite() {
   const isZh = lang === "zh";
 
   const tests = useMemo(() => {
-    console.assert(content.en.services.length === 5, "Expected four English services");
-    console.assert(content.zh.services.length === 5, "Expected four Chinese services");
+    console.assert(content.en.services.length === 6, "Expected six English services");
+    console.assert(content.zh.services.length === 6, "Expected six Chinese services");
     console.assert(content.en.leaders.length === 3, "Expected three English leaders");
     console.assert(content.zh.leaders.length === 3, "Expected three Chinese leaders");
     console.assert(Object.values(TEAM_IMAGES).every((path) => typeof path === "string" && path.startsWith("/")), "Team image paths must be public-root paths");
