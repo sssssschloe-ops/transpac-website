@@ -112,15 +112,15 @@ const content = {
   en: {
     languageButton: "中文",
     nav: ["Services", "About", "Projects", "Process", "Insights", "Why Us", "Contact"],
-    logoSubtitle: "Boutique Advisory · Washington, D.C.",
+    logoSubtitle: "Strategic Consulting • International Trade • Washington, D.C.",
     logoAccent: "Minimal executive identity for international consulting",
     start: "Start a Project",
     badge: "Strategic Consulting • International Trade • Project Delivery",
     heroTitle: "Connecting Strategy, Trade, and Global Opportunities.",
     heroDesc:
-"TransPac Inc. is a U.S.-based strategic consulting and international trade company helping organizations expand globally through business advisory, cross-border sourcing, procurement, supply chain coordination, and project delivery."
-    heroSub:
-      "We deliver practical solutions that connect strategy with execution, enabling organizations to grow through consulting, international trade, and cross-border partnerships."
+"TransPac Inc. is a U.S.-based strategic consulting and international trade company helping organizations expand globally through business advisory, international trade, global sourcing, procurement management, supply chain coordination, and project delivery.",
+heroSub:
+"We transform strategy into execution by combining consulting expertise, international trade capabilities, and end-to-end project management to support sustainable global growth.",
     explore: "Explore Services",
     contact: "Contact Us",
     core: "Core Advantages",
