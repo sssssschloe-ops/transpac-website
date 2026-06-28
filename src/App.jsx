@@ -121,26 +121,26 @@ const content = {
     badge: "Strategic Consulting • International Trade • Project Delivery",
     heroTitle: "Strategy. Trade. Global Growth.",
     heroDesc:
-      "TransPac Inc. is a U.S.-based strategic consulting and international trade company helping organizations expand globally through business advisory, international trade, global sourcing, procurement management, supply chain coordination, and project delivery.",
+      "TransPac Inc. is a U.S.-based strategic consulting and international trade company supporting organizations through market entry, procurement, global sourcing, supply chain coordination, and project delivery.",
 heroSub:
-      "We transform strategy into execution by combining consulting expertise, international trade capabilities, and end-to-end project management to support sustainable global growth.",
+      "We transform ideas into practical execution by combining strategy, trade expertise, and cross-border business resources.",
     explore: "Explore Services",
     contact: "Contact Us",
     core: "Core Advantages",
     strategy: "Strategy + Execution",
     stats: [
 ["Washington, D.C.","Headquarters"],
-["North America & Asia","Global Network"],
-["Consulting + Trade","Core Services"],
-["End-to-End","Project Delivery"]
+["North America & Asia","Business Network"],
+["International Trade","Global Procurement"],
+["Project Delivery","Execution"]
 ],
     strengths: [
-      "U.S. market insight and local information consulting",
-      "Cross-border business and education expertise",
-      "Bilingual communication and international strategy",
-      "Media, branding, and storytelling capability",
-      "Project planning from concept to execution",
-      "Strategic partnership and regional market network"
+      "Strategic consulting and market entry planning",
+      "International trade and commercial procurement",
+      "Global sourcing and supplier coordination",
+      "Supply chain and logistics communication",
+      "Bilingual business documentation",
+      "Cross-border partnerships and project delivery"
     ],
     servicesLabel: "Services",
     servicesTitle: "Integrated consulting, trade, and project services",
@@ -384,26 +384,26 @@ heroSub:
     badge: "战略咨询 · 国际贸易 · 项目落地",
     heroTitle: "战略、贸易与全球增长。",
     heroDesc:
-      "TransPac Inc. 是一家总部位于美国的国际咨询与国际贸易公司，为客户提供战略咨询、国际贸易、跨境采购、供应链管理及项目落地服务，助力企业拓展北美及亚洲市场。",
+      "TransPac Inc. 是一家总部位于美国的战略咨询与国际贸易公司，为客户提供市场进入、跨境采购、全球寻源、供应链协调及项目落地服务。",
     heroSub:
-      "我们将战略转化为执行，结合咨询能力、国际贸易资源与项目管理经验，支持客户实现可持续的全球化增长。",
+      "我们将商业想法转化为可执行方案，结合战略咨询、国际贸易经验与跨境商业资源，推动项目真正落地。",
     explore: "查看服务",
     contact: "联系我们",
     core: "核心优势",
     strategy: "战略 + 执行",
     stats: [
 ["华盛顿特区","总部"],
-["北美 · 亚洲","全球网络"],
-["咨询 + 国际贸易","核心业务"],
-["全流程","项目交付"]
+["北美 · 亚洲","商业网络"],
+["国际贸易","全球采购"],
+["项目落地","执行能力"]
 ],
     strengths: [
-      "美国本土市场洞察与信息咨询能力",
-      "跨境商业与国际教育项目经验",
-      "中英双语沟通与国际战略能力",
-      "媒体传播、品牌塑造与叙事能力",
-      "从概念到落地的项目执行能力",
-      "战略合作资源与区域市场网络"
+      "战略咨询与市场进入规划",
+      "国际贸易与商业采购",
+      "全球寻源与供应商协调",
+      "供应链与物流沟通",
+      "中英双语商务文件",
+      "跨境合作与项目交付"
     ],
     servicesLabel: "服务",
     servicesTitle: "咨询、贸易与项目落地一体化服务",
@@ -737,15 +737,15 @@ export default function TranspacWebsite() {
       `}</style>
 
       <header className="sticky top-0 z-50 border-b border-[#14213d]/10 bg-[#f7f4ef]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
           <div className="flex items-center gap-4">
-            <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl bg-[#14213d] shadow-lg">
+            <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-[#14213d] shadow-lg">
               <div className={`absolute inset-0 bg-gradient-to-br ${currentLogo.style}`} />
               <div className="relative text-sm font-semibold tracking-[0.18em] text-[#d6b36a]">TP</div>
             </div>
             <div>
-              <div className="text-xl font-semibold uppercase tracking-[0.28em] text-[#14213d]">{currentLogo.wordmark}</div>
-              <div className="mt-1 text-[10px] uppercase tracking-[0.30em] text-[#14213d]/55">{t.logoSubtitle}</div>
+              <div className="text-lg font-semibold uppercase tracking-[0.28em] text-[#14213d]">{currentLogo.wordmark}</div>
+              <div className="mt-1 text-[9px] uppercase tracking-[0.28em] text-[#14213d]/55">{t.logoSubtitle}</div>
               <div className="mt-1 text-[9px] tracking-[0.18em] text-[#14213d]/35">{t.logoAccent}</div>
             </div>
           </div>
@@ -775,20 +775,13 @@ export default function TranspacWebsite() {
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#14213d]/15 bg-white/50 px-4 py-2 text-sm text-[#14213d]/70 shadow-sm">
                 <Icon type="spark" size={16} /> {t.badge}
               </div>
-              <h1 className="max-w-4xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">{t.heroTitle}</h1>
+              <h1 className="max-w-4xl text-5xl font-semibold leading-tight tracking-tight md:text-6xl">{t.heroTitle}</h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#14213d]/70">{t.heroDesc}</p>
               <p className="mt-4 max-w-2xl text-base leading-7 text-[#14213d]/60">{t.heroSub}</p>
-              <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {t.stats.map(([number, label]) => (
-                  <div key={`${number}-${label}`} className="rounded-2xl border border-[#14213d]/10 bg-white/50 p-5 backdrop-blur-sm">
-                    <div className="text-xl font-semibold text-[#14213d]">{number}</div>
-                    <div className="mt-1 text-sm text-[#14213d]/60">{label}</div>
-                  </div>
-                ))}
-              </div>
+
               <div className="mt-9 flex flex-wrap gap-4">
                 <Button>{t.explore} <Icon type="arrow" className="ml-2" size={18} /></Button>
-                <Button variant="outline">{t.contact}</Button>
+                <Button variant="outline">{t.start}</Button>
               </div>
             </div>
 
@@ -813,7 +806,7 @@ export default function TranspacWebsite() {
                   ))}
                 </div>
                 <div className="mt-6 space-y-3">
-                  {t.strengths.slice(0, 4).map((item) => (
+                  {t.strengths.map((item) => (
                     <div key={item} className="flex gap-3 rounded-2xl border border-white/10 bg-white/8 p-4 text-sm leading-6 text-white/85 backdrop-blur-sm">
                       <Icon type="check" className="mt-0.5 shrink-0 text-[#d6b36a]" size={18} />
                       {item}
