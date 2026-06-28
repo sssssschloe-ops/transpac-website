@@ -111,7 +111,7 @@ const Card = ({ children, className = "" }) => (
 const content = {
   en: {
     languageButton: "中文",
-    nav: ["Services", "About", "Projects", "Process", "Insights", "Why Us", "Contact"],
+    nav: ["Services", "Industries", "About", "Projects", "Process", "Insights", "Why Us", "Contact"],
     logoSubtitle: "Strategic Consulting • International Trade • Washington, D.C.",
     logoAccent: "Minimal executive identity for international consulting",
     start: "Start a Project",
@@ -181,6 +181,21 @@ heroSub:
         items: ["Brand positioning", "Bilingual content", "Promotional videos", "Public communication"]
       }
     ],
+    industriesLabel: "Industries",
+    industriesTitle: "Industries we serve",
+    industriesDesc:
+      "Our cross-border consulting, trade, and project delivery model can support clients across multiple sectors without being limited to a single product category or project type.",
+    industries: [
+      ["Healthcare", "Healthcare-adjacent projects, facility support, and non-medical operational equipment coordination."],
+      ["Senior Living", "Senior living, assisted living, adult day care, FF&E planning, and project implementation support."],
+      ["Hospitality", "Hotels, restaurants, guest-facing spaces, commercial furniture, and equipment procurement."],
+      ["Commercial Real Estate", "Commercial interiors, office projects, retail spaces, renovation coordination, and procurement planning."],
+      ["Manufacturing", "Supplier sourcing, OEM/ODM coordination, commercial procurement, and factory communication."],
+      ["Recreation & Sports", "Recreation facilities, sports venues, commercial equipment, and destination-based project support."],
+      ["Education", "School partnerships, study tours, international programs, and education-related project planning."],
+      ["Media & Entertainment", "Brand storytelling, bilingual communication, cultural events, and media strategy."],
+      ["Consumer Products", "Product sourcing, private label development, trade documentation, and delivery coordination."]
+    ],
     aboutLabel: "About TransPac",
     aboutTitle: "A consulting partner for a more connected market.",
     aboutP1:
@@ -231,6 +246,18 @@ heroSub:
       ["03", "Execution", "Coordinate resources, manage projects, and deliver practical results."],
       ["04", "Growth", "Review outcomes, optimize strategy, and support long-term development."]
     ],
+    tradeProcessLabel: "Trade Process",
+    tradeProcessTitle: "From sourcing to delivery.",
+    tradeProcess: [
+      ["01", "Inquiry", "Understand product needs, quantity, destination, timeline, and budget."],
+      ["02", "Supplier Matching", "Identify qualified suppliers and manufacturing partners."],
+      ["03", "Quotation", "Coordinate pricing, product specifications, and commercial terms."],
+      ["04", "Production", "Support production communication and order timeline tracking."],
+      ["05", "Inspection", "Coordinate quality review, samples, and pre-shipment checks when applicable."],
+      ["06", "Shipping", "Support logistics planning, DDP/FOB coordination, and documentation."],
+      ["07", "Delivery", "Track shipment progress and coordinate final destination delivery."],
+      ["08", "After-sales", "Support communication, issue tracking, and ongoing project follow-up."]
+    ],
     leadershipLabel: "Leadership Team",
     leadershipTitle: "Experienced leaders. Global perspective.",
     leadershipDesc:
@@ -260,7 +287,7 @@ heroSub:
       },
       {
         name: "Yunze Li",
-        role: "Director of Operations & Client Services",
+        role: "Director of Cross-Border Trade & Finance",
         image: TEAM_IMAGES.yunze,
         summary: "Manages project execution, operational coordination, client communication, financial planning support, and service delivery quality across consulting and event-based projects.",
         education: "Johns Hopkins University SAIS",
@@ -272,16 +299,16 @@ heroSub:
     networkDesc:
       "In addition to the leadership team, the company works with a flexible network of consultants, researchers, media producers, event specialists, and external partners based on project needs.",
     whyLabel: "Why TransPac",
-    whyTitle: "Built for organizations seeking practical strategy and long-term growth.",
+    whyTitle: "Built for cross-border growth, trade, and execution.",
     whyDesc:
-      "TransPac combines market research, strategic consulting, educational technology expertise, branding support, and cross-border project execution to help clients navigate complex business and international environments.",
+      "TransPac combines U.S.-based business insight, international trade capability, supplier coordination, bilingual communication, and hands-on project delivery to support clients from strategy through execution.",
     reasons: [
-      ["U.S. Local Insight", "We understand U.S. market information, business culture, local communication habits, and practical project needs."],
-      ["Bilingual Advantage", "We help clients communicate clearly across English and Chinese contexts, from strategy documents to public-facing content."],
-      ["Strategy + Execution", "We do not only provide ideas. We help structure plans, coordinate resources, and move projects forward."],
-      ["Cross-Sector Experience", "Our work connects education, business, media, culture, events, and international partnerships."],
-      ["Washington, D.C. Presence", "Located in the political and business center of Washington, D.C., we stay connected to policy, education, and international dialogue."],
-      ["Flexible Boutique Consulting", "We combine the agility of a boutique consulting firm with hands-on project coordination and personalized client support."]
+      ["U.S.-Based Company", "Headquartered in Washington, D.C., we support clients with U.S. market perspective and local business communication."],
+      ["Cross-Border Expertise", "We help clients navigate business, education, media, procurement, and trade opportunities across North America and Asia."],
+      ["International Trade Capability", "We support product sourcing, procurement, commercial transactions, import/export coordination, and supplier communication."],
+      ["Global Supplier Network", "We help identify and coordinate manufacturers, vendors, product suppliers, and commercial partners across relevant markets."],
+      ["End-to-End Project Delivery", "From strategy and sourcing to logistics and implementation, we help move projects from concept to execution."],
+      ["Long-Term Partnership", "We work as a boutique partner with flexible support, professional documentation, and practical execution capability."]
     ],
     trustedLabel: "Trusted Network",
     trustedTitle: "Built around collaboration and long-term partnerships.",
@@ -295,13 +322,13 @@ heroSub:
       ["The team brought a professional combination of strategic thinking, U.S. market insight, and execution capability to the project.", "Business Advisory Client", "Market Expansion"],
       ["Their ability to coordinate branding, media communication, and event operations made the collaboration highly efficient and well organized.", "Cultural & Media Collaborator", "International Events"]
     ],
-    ctaBadge: "Boutique Consulting · International Perspective · Strategic Execution",
-    ctaTitle: "Helping organizations navigate growth, communication, and international opportunities.",
+    ctaBadge: "Strategic Consulting · International Trade · Project Delivery",
+    ctaTitle: "Helping organizations expand, source, trade, and execute across borders.",
     ctaDesc:
-      "From market strategy and educational technology to branding and project execution, TransPac supports clients with practical consulting and cross-cultural expertise.",
+      "From strategy and sourcing to procurement, logistics, branding, and implementation, TransPac supports clients with practical cross-border solutions.",
     contactLabel: "Contact",
     formTitle: "Let's build your next project together.",
-    formDesc: "Tell us about your organization, project, or market question. TransPac can help you shape the strategy, build the plan, and execute the next step.",
+    formDesc: "Tell us about your organization, trade inquiry, procurement need, or project plan. TransPac can help you shape the strategy, source the right partners, and execute the next step.",
     formName: "Name",
     formEmail: "Email",
     formCompany: "Company / Organization",
@@ -313,7 +340,7 @@ heroSub:
   },
   zh: {
     languageButton: "English",
-    nav: ["服务", "关于", "案例", "流程", "洞察", "优势", "联系"],
+    nav: ["服务", "行业", "关于", "案例", "流程", "洞察", "优势", "联系"],
     logoSubtitle: "战略咨询 · 国际贸易 · 华盛顿特区",
     logoAccent: "面向机构客户的极简高端咨询品牌识别",
     start: "开始项目",
@@ -322,7 +349,7 @@ heroSub:
     heroDesc:
       "TransPac Inc. 是一家总部位于美国的国际咨询与国际贸易公司，为客户提供战略咨询、国际贸易、跨境采购、供应链管理及项目落地服务，助力企业拓展北美及亚洲市场。",
     heroSub:
-      "我们帮助机构建立长期增长、国际合作伙伴关系与专业市场影响力，以战略与执行推动项目落地。",
+      "我们将战略转化为执行，结合咨询能力、国际贸易资源与项目管理经验，支持客户实现可持续的全球化增长。",
     explore: "查看服务",
     contact: "联系我们",
     core: "核心优势",
@@ -383,6 +410,21 @@ heroSub:
         items: ["品牌定位", "中英文内容", "宣传视频", "公共传播"]
       }
     ],
+    industriesLabel: "服务行业",
+    industriesTitle: "我们服务的行业",
+    industriesDesc:
+      "TransPac 的跨境咨询、国际贸易与项目落地模式可服务多个行业，不局限于单一产品或单一项目类型。",
+    industries: [
+      ["医疗健康", "医疗健康相关项目、设施支持及非医疗运营设备协调。"],
+      ["养老产业", "养老社区、辅助生活、日间照护、FF&E 规划及项目落地支持。"],
+      ["酒店餐饮", "酒店、餐饮、客户空间、商业家具及设备采购。"],
+      ["商业地产", "商业室内空间、办公项目、零售空间、装修协调与采购规划。"],
+      ["制造业", "供应商寻源、OEM/ODM 协调、商业采购及工厂沟通。"],
+      ["体育休闲", "休闲设施、体育场景、商业设备及目的地项目支持。"],
+      ["教育", "学校合作、学生访学、国际项目及教育相关项目规划。"],
+      ["媒体娱乐", "品牌叙事、双语传播、文化活动与媒体策略。"],
+      ["消费品", "产品采购、自有品牌开发、贸易文件及交付协调。"]
+    ],
     aboutLabel: "关于 TransPac",
     aboutTitle: "连接市场与机会的咨询伙伴。",
     aboutP1:
@@ -433,6 +475,18 @@ heroSub:
       ["03", "项目执行", "协调资源、管理项目进度，并推动实际成果落地。"],
       ["04", "长期增长", "复盘项目成果、优化策略，并支持客户长期发展。"]
     ],
+    tradeProcessLabel: "贸易流程",
+    tradeProcessTitle: "从采购寻源到最终交付。",
+    tradeProcess: [
+      ["01", "需求确认", "明确产品类别、数量、目的地、时间安排与预算。"],
+      ["02", "供应商匹配", "筛选合格供应商、工厂及生产合作伙伴。"],
+      ["03", "报价协调", "协调价格、产品规格及商业条款。"],
+      ["04", "生产跟进", "支持生产沟通与订单进度跟踪。"],
+      ["05", "验货支持", "在适用情况下协调样品、质量审核及出货前检查。"],
+      ["06", "运输安排", "支持物流规划、DDP/FOB 协调及文件准备。"],
+      ["07", "交付协调", "跟踪运输进度并协调最终目的地交付。"],
+      ["08", "售后支持", "支持沟通协调、问题跟进及后续项目服务。"]
+    ],
     leadershipLabel: "领导团队",
     leadershipTitle: "国际视野与专业执行力并重的团队。",
     leadershipDesc:
@@ -462,7 +516,7 @@ heroSub:
       },
       {
         name: "李昀泽",
-        role: "运营与客户服务总监",
+        role: "跨境贸易与金融总监",
         image: TEAM_IMAGES.yunze,
         summary: "负责项目执行、运营协调、客户沟通、财务规划支持及咨询与活动项目的交付质量管理。",
         education: "约翰霍普金斯大学高级国际研究学院",
@@ -473,15 +527,15 @@ heroSub:
     networkTitle: "灵活专业网络",
     networkDesc: "除核心领导团队外，公司还会根据项目需求，与咨询顾问、研究人员、媒体制作人、活动专家及外部合作伙伴组成灵活项目团队。",
     whyLabel: "为什么选择 TransPac",
-    whyTitle: "为需要实际战略与长期增长的机构而设。",
-    whyDesc: "TransPac 结合市场研究、战略咨询、教育科技、品牌传播与跨境项目执行能力，帮助客户应对复杂商业与国际环境。",
+    whyTitle: "为跨境增长、国际贸易与项目执行而设。",
+    whyDesc: "TransPac 结合美国本土商业洞察、国际贸易能力、供应商协调、中英双语沟通与实际项目交付能力，支持客户从战略规划走向执行落地。",
     reasons: [
-      ["美国本土洞察", "我们理解美国市场信息、商业文化、本土沟通习惯与实际项目需求。"],
-      ["双语沟通优势", "我们帮助客户在中英文语境中清晰表达，从战略文件到对外内容都保持专业一致。"],
-      ["战略与执行并重", "我们不只提供想法，也帮助客户搭建方案、协调资源并推进落地。"],
-      ["跨领域经验", "我们的项目连接教育、商业、媒体、文化、活动与国际合作。"],
-      ["华盛顿特区区位优势", "公司位于华盛顿特区核心区域，贴近政策、教育与国际交流资源。"],
-      ["精品咨询灵活性", "我们结合精品咨询公司的灵活性与实际项目管理能力，为客户提供个性化支持。"]
+      ["美国本土公司", "总部位于华盛顿特区，能够为客户提供美国市场视角与本地商业沟通支持。"],
+      ["跨境业务经验", "我们帮助客户连接北美与亚洲的商业、教育、媒体、采购及贸易机会。"],
+      ["国际贸易能力", "我们支持产品采购、商业交易、进出口协调、贸易文件及供应商沟通。"],
+      ["全球供应链资源", "我们协助识别并协调制造商、供应商、产品资源及商业合作伙伴。"],
+      ["全流程项目交付", "从战略、采购到物流与项目实施，帮助客户将想法推进到实际落地。"],
+      ["长期合作伙伴", "我们以精品咨询公司的灵活性，提供专业文件、持续沟通与实操型项目支持。"]
     ],
     trustedLabel: "合作网络",
     trustedTitle: "围绕长期合作与项目协同建立网络。",
@@ -494,12 +548,12 @@ heroSub:
       ["团队将战略思维、美国市场洞察与项目执行能力有效结合，为项目提供了专业支持。", "商业咨询客户", "市场拓展"],
       ["他们在品牌、媒体传播与活动执行方面的协调能力，让整个合作高效且有条理。", "文化与媒体合作方", "国际活动"]
     ],
-    ctaBadge: "精品咨询 · 国际视野 · 战略执行",
-    ctaTitle: "帮助机构应对增长、传播与国际机会。",
-    ctaDesc: "从市场战略、教育科技到品牌传播与项目执行，TransPac 以实用咨询和跨文化经验支持客户发展。",
+    ctaBadge: "战略咨询 · 国际贸易 · 项目落地",
+    ctaTitle: "帮助机构完成跨境增长、采购、贸易与项目执行。",
+    ctaDesc: "从战略规划、供应商寻源到采购、物流、品牌传播与项目实施，TransPac 为客户提供实用的跨境解决方案。",
     contactLabel: "联系",
-    formTitle: "一起推进你的下一个项目。",
-    formDesc: "告诉我们你的机构、项目或市场问题。TransPac 可以帮助你梳理战略、制定计划并推进执行。",
+    formTitle: "准备拓展国际市场？"
+    formDesc: "告诉我们你的机构、贸易需求、采购计划或项目方向。TransPac 可以帮助你梳理战略、匹配资源并推进下一步执行。",
     formName: "姓名",
     formEmail: "邮箱",
     formCompany: "公司 / 机构",
@@ -555,6 +609,10 @@ export default function TranspacWebsite() {
     console.assert(content.en.services.length === 6, "Expected six English services");
     console.assert(content.zh.services.length === 6, "Expected six Chinese services");
     console.assert(content.en.leaders.length === 3, "Expected three English leaders");
+    console.assert(content.en.industries.length === 9, "Expected nine English industries");
+    console.assert(content.zh.industries.length === 9, "Expected nine Chinese industries");
+    console.assert(content.en.tradeProcess.length === 8, "Expected eight English trade process steps");
+    console.assert(content.zh.tradeProcess.length === 8, "Expected eight Chinese trade process steps");
     console.assert(content.zh.leaders.length === 3, "Expected three Chinese leaders");
     console.assert(Object.values(TEAM_IMAGES).every((path) => typeof path === "string" && path.startsWith("/")), "Team image paths must be public-root paths");
     return true;
@@ -599,7 +657,7 @@ export default function TranspacWebsite() {
               {t.languageButton}
             </button>
             {t.nav.map((item, index) => {
-              const hrefs = ["#services", "#about", "#projects", "#process", "#insights", "#why", "#contact"];
+              const hrefs = ["#services", "#industries", "#about", "#projects", "#process", "#insights", "#why", "#contact"];
               return <a key={item} href={hrefs[index]} className="hover:text-[#14213d]">{item}</a>;
             })}
           </nav>
@@ -682,6 +740,27 @@ export default function TranspacWebsite() {
           </div>
         </section>
 
+        <section id="industries" className="bg-[#14213d] px-6 py-20 text-white">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 max-w-4xl">
+              <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6b36a]">{t.industriesLabel}</div>
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">{t.industriesTitle}</h2>
+              <p className="mt-5 text-lg leading-8 text-white/70">{t.industriesDesc}</p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {t.industries.map(([title, desc]) => (
+                <div key={title} className="rounded-[2rem] border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/10">
+                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-[#d6b36a] text-[#14213d]">
+                    <Icon type="business" size={20} />
+                  </div>
+                  <h3 className="text-xl font-semibold">{title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-white/70">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="about" className="bg-white/55 px-6 py-20">
           <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr]">
             <div>
@@ -746,6 +825,22 @@ export default function TranspacWebsite() {
                   </div>
                 </Card>
               ))}
+            </div>
+
+            <div className="mt-14 rounded-[2.25rem] bg-[#14213d] p-8 text-white shadow-xl md:p-10">
+              <div className="mb-8">
+                <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6b36a]">{t.tradeProcessLabel}</div>
+                <h3 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{t.tradeProcessTitle}</h3>
+              </div>
+              <div className="grid gap-4 md:grid-cols-4">
+                {t.tradeProcess.map(([num, title, desc]) => (
+                  <div key={`trade-${num}`} className="rounded-[1.5rem] border border-white/10 bg-white/8 p-5 backdrop-blur-sm">
+                    <div className="text-sm font-semibold text-[#d6b36a]">{num}</div>
+                    <h4 className="mt-3 text-lg font-semibold">{title}</h4>
+                    <p className="mt-2 text-xs leading-6 text-white/65">{desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
