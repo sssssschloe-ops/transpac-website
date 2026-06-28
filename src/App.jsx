@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 const TEAM_IMAGES = {
   qibao: "/qibao.jpg",
@@ -111,12 +111,15 @@ const Card = ({ children, className = "" }) => (
 const content = {
   en: {
     languageButton: "中文",
+    seoTitle: "TransPac Inc. | Strategic Consulting, International Trade & Project Delivery",
+    seoDesc: "TransPac Inc. is a U.S.-based strategic consulting and international trade company supporting cross-border growth, sourcing, procurement, supply chain coordination, and project delivery across North America and Asia.",
+    inquiryTypes: ["Business Inquiry", "Trade Inquiry", "Strategic Consulting", "General Questions"],
     nav: ["Services", "Industries", "Trade", "Projects", "Process", "Insights", "Why Us", "Contact"],
     logoSubtitle: "Strategic Consulting • International Trade • Washington, D.C.",
     logoAccent: "Minimal executive identity for international consulting",
     start: "Start a Project",
     badge: "Strategic Consulting • International Trade • Project Delivery",
-    heroTitle: "Connecting Strategy, Trade, and Global Opportunities.",
+    heroTitle: "Strategy. Trade. Global Growth.",
     heroDesc:
       "TransPac Inc. is a U.S.-based strategic consulting and international trade company helping organizations expand globally through business advisory, international trade, global sourcing, procurement management, supply chain coordination, and project delivery.",
 heroSub:
@@ -357,8 +360,8 @@ heroSub:
     ctaTitle: "Helping organizations expand, source, trade, and execute across borders.",
     ctaDesc:
       "From strategy and sourcing to procurement, logistics, branding, and implementation, TransPac supports clients with practical cross-border solutions.",
-    contactLabel: "Contact",
-    formTitle: "Let's build your next project together.",
+    contactLabel: "Contact & Inquiry",
+    formTitle: "Ready to work together?"
     formDesc: "Tell us about your organization, trade inquiry, procurement need, or project plan. TransPac can help you shape the strategy, source the right partners, and execute the next step.",
     formName: "Name",
     formEmail: "Email",
@@ -371,12 +374,15 @@ heroSub:
   },
   zh: {
     languageButton: "English",
+    seoTitle: "TransPac Inc. | 战略咨询、国际贸易与项目落地",
+    seoDesc: "TransPac Inc. 是一家美国战略咨询与国际贸易公司，为客户提供跨境增长、采购寻源、供应链协调及项目落地服务。",
+    inquiryTypes: ["商务咨询", "贸易询价", "战略咨询", "一般问题"],
     nav: ["服务", "行业", "贸易", "案例", "流程", "洞察", "优势", "联系"],
     logoSubtitle: "战略咨询 · 国际贸易 · 华盛顿特区",
     logoAccent: "面向机构客户的极简高端咨询品牌识别",
     start: "开始项目",
     badge: "战略咨询 · 国际贸易 · 项目落地",
-    heroTitle: "连接战略、贸易与全球机遇。",
+    heroTitle: "战略、贸易与全球增长。",
     heroDesc:
       "TransPac Inc. 是一家总部位于美国的国际咨询与国际贸易公司，为客户提供战略咨询、国际贸易、跨境采购、供应链管理及项目落地服务，助力企业拓展北美及亚洲市场。",
     heroSub:
@@ -613,8 +619,8 @@ heroSub:
     ctaBadge: "战略咨询 · 国际贸易 · 项目落地",
     ctaTitle: "帮助机构完成跨境增长、采购、贸易与项目执行。",
     ctaDesc: "从战略规划、供应商寻源到采购、物流、品牌传播与项目实施，TransPac 为客户提供实用的跨境解决方案。",
-    contactLabel: "联系",
-    formTitle: "准备拓展国际市场？",
+    contactLabel: "联系与咨询",
+    formTitle: "准备开始合作？"
     formDesc: "告诉我们你的机构、贸易需求、采购计划或项目方向。TransPac 可以帮助你梳理战略、匹配资源并推进下一步执行。",
     formName: "姓名",
     formEmail: "邮箱",
@@ -667,6 +673,33 @@ export default function TranspacWebsite() {
   const t = content[lang];
   const isZh = lang === "zh";
 
+  useEffect(() => {
+    document.title = t.seoTitle;
+    const setMeta = (name, value) => {
+      let tag = document.querySelector(`meta[name="${name}"]`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("name", name);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", value);
+    };
+    const setProperty = (property, value) => {
+      let tag = document.querySelector(`meta[property="${property}"]`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("property", property);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", value);
+    };
+    setMeta("description", t.seoDesc);
+    setMeta("keywords", "TransPac, strategic consulting, international trade, procurement, supply chain, project delivery, Washington DC");
+    setProperty("og:title", t.seoTitle);
+    setProperty("og:description", t.seoDesc);
+    setProperty("og:type", "website");
+  }, [t.seoTitle, t.seoDesc]);
+
   const tests = useMemo(() => {
     console.assert(content.en.services.length === 6, "Expected six English services");
     console.assert(content.zh.services.length === 6, "Expected six Chinese services");
@@ -677,6 +710,10 @@ export default function TranspacWebsite() {
     console.assert(content.zh.tradeProcess.length === 8, "Expected eight Chinese trade process steps");
     console.assert(content.en.tradeCapabilities.length === 4, "Expected four English trade capabilities");
     console.assert(content.zh.tradeCapabilities.length === 4, "Expected four Chinese trade capabilities");
+    console.assert(content.en.inquiryTypes.length === 4, "Expected four English inquiry types");
+    console.assert(content.zh.inquiryTypes.length === 4, "Expected four Chinese inquiry types");
+    console.assert(content.en.nav.length === 8, "Expected eight English nav items");
+    console.assert(content.zh.nav.length === 8, "Expected eight Chinese nav items");
     console.assert(content.zh.leaders.length === 3, "Expected three Chinese leaders");
     console.assert(Object.values(TEAM_IMAGES).every((path) => typeof path === "string" && path.startsWith("/")), "Team image paths must be public-root paths");
     return true;
@@ -713,7 +750,7 @@ export default function TranspacWebsite() {
             </div>
           </div>
 
-          <nav className="hidden items-center gap-8 text-sm font-medium text-[#14213d]/70 md:flex">
+          <nav className="hidden items-center gap-5 text-sm font-medium text-[#14213d]/70 lg:flex">
             <button
               onClick={() => setLang(isZh ? "en" : "zh")}
               className="rounded-full border border-[#14213d]/10 bg-white px-4 py-2 text-xs font-semibold tracking-[0.18em] text-[#14213d] shadow-sm transition hover:bg-[#14213d] hover:text-white"
@@ -725,7 +762,7 @@ export default function TranspacWebsite() {
               return <a key={item} href={hrefs[index]} className="hover:text-[#14213d]">{item}</a>;
             })}
           </nav>
-          <Button className="hidden md:inline-flex">{t.start}</Button>
+          <Button className="hidden lg:inline-flex">{t.start}</Button>
         </div>
       </header>
 
@@ -757,17 +794,27 @@ export default function TranspacWebsite() {
 
             <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-[#14213d] via-[#1c3158] to-[#243f73] text-white shadow-2xl animate-fade-up">
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_#d6b36a,_transparent_40%)]" />
+              <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full border border-[#d6b36a]/30" />
+              <div className="absolute -bottom-16 left-8 h-40 w-40 rounded-full border border-white/10" />
               <div className="relative p-8 md:p-10">
-                <div className="mb-10 flex items-center justify-between">
+                <div className="mb-8 flex items-center justify-between">
                   <div>
                     <div className="text-sm uppercase tracking-[0.28em] text-white/70">{t.core}</div>
                     <div className="mt-2 text-2xl font-semibold text-white">{t.strategy}</div>
                   </div>
-                  <Icon type="globe" className="text-[#d6b36a]" size={34} />
+                  <Icon type="globe" className="text-[#d6b36a]" size={38} />
                 </div>
-                <div className="space-y-5">
-                  {t.strengths.map((item) => (
-                    <div key={item} className="flex gap-3 rounded-2xl border border-white/10 bg-white/10 p-4 text-sm leading-6 text-white/90 backdrop-blur-sm">
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {t.stats.map(([number, label]) => (
+                    <div key={`hero-card-${number}`} className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
+                      <div className="text-xl font-semibold text-[#d6b36a]">{number}</div>
+                      <div className="mt-1 text-sm text-white/70">{label}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 space-y-3">
+                  {t.strengths.slice(0, 4).map((item) => (
+                    <div key={item} className="flex gap-3 rounded-2xl border border-white/10 bg-white/8 p-4 text-sm leading-6 text-white/85 backdrop-blur-sm">
                       <Icon type="check" className="mt-0.5 shrink-0 text-[#d6b36a]" size={18} />
                       {item}
                     </div>
@@ -781,7 +828,7 @@ export default function TranspacWebsite() {
         <section id="services" className="px-6 py-20">
           <div className="mx-auto max-w-7xl">
             <SectionIntro label={t.servicesLabel} title={t.servicesTitle} desc={t.servicesDesc} />
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {t.services.map((service) => (
                 <Card key={service.title} className="transition hover:-translate-y-1 hover:shadow-xl">
                   <div className="p-8">
@@ -813,7 +860,7 @@ export default function TranspacWebsite() {
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {t.industries.map(([title, desc]) => (
-                <div key={title} className="rounded-[2rem] border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/10">
+                <div key={title} className="group rounded-[2rem] border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
                   <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-[#d6b36a] text-[#14213d]">
                     <Icon type="business" size={20} />
                   </div>
@@ -931,9 +978,9 @@ export default function TranspacWebsite() {
                 <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6b36a]">{t.tradeProcessLabel}</div>
                 <h3 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{t.tradeProcessTitle}</h3>
               </div>
-              <div className="grid gap-4 md:grid-cols-4">
+              <div className="relative grid gap-4 md:grid-cols-4">
                 {t.tradeProcess.map(([num, title, desc]) => (
-                  <div key={`trade-${num}`} className="rounded-[1.5rem] border border-white/10 bg-white/8 p-5 backdrop-blur-sm">
+                  <div key={`trade-${num}`} className="relative rounded-[1.5rem] border border-white/10 bg-white/8 p-5 backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/12">
                     <div className="text-sm font-semibold text-[#d6b36a]">{num}</div>
                     <h4 className="mt-3 text-lg font-semibold">{title}</h4>
                     <p className="mt-2 text-xs leading-6 text-white/65">{desc}</p>
@@ -1060,6 +1107,11 @@ export default function TranspacWebsite() {
                 <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6b36a]">{t.contactLabel}</div>
                 <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">{t.formTitle}</h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">{t.formDesc}</p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {t.inquiryTypes.map((item) => (
+                    <span key={item} className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm text-white/75">{item}</span>
+                  ))}
+                </div>
               </div>
               <div className="rounded-[2rem] bg-white/10 p-7 text-white">
                 <div className="space-y-5">
@@ -1091,14 +1143,20 @@ export default function TranspacWebsite() {
       </main>
 
       <footer className="border-t border-[#14213d]/10 bg-[#f8f5ef] px-6 py-10 text-sm text-[#14213d]/55">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 md:flex-row">
+        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.2fr_0.8fr]">
           <div>
             <div className="font-semibold tracking-[0.18em] text-[#14213d]">TRANSPAC INC.</div>
-            <div className="mt-2">© 2024 TransPac Inc. All rights reserved.</div>
-            <div className="mt-2">1775 Pennsylvania Ave NW. Suite 225 · Washington, DC 20006</div>
+            <div className="mt-3 max-w-3xl leading-7">{t.footerServices}</div>
+            <div className="mt-5">1775 Pennsylvania Ave NW. Suite 225 · Washington, DC 20006</div>
             <div className="mt-1">contact@transpacintl.com · 805-284-7275</div>
+            <div className="mt-4">© 2024 TransPac Inc. All rights reserved.</div>
           </div>
-          <div>{t.footerServices}</div>
+          <div className="grid grid-cols-2 gap-3 text-right md:text-left">
+            {t.nav.map((item, index) => {
+              const hrefs = ["#services", "#industries", "#trade", "#projects", "#process", "#insights", "#why", "#contact"];
+              return <a key={`footer-${item}`} href={hrefs[index]} className="hover:text-[#14213d]">{item}</a>;
+            })}
+          </div>
         </div>
       </footer>
     </div>
