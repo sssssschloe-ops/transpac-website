@@ -111,7 +111,7 @@ const Card = ({ children, className = "" }) => (
 const content = {
   en: {
     languageButton: "中文",
-    nav: ["Services", "Industries", "About", "Projects", "Process", "Insights", "Why Us", "Contact"],
+    nav: ["Services", "Industries", "Trade", "Projects", "Process", "Insights", "Why Us", "Downloads", "Contact"],
     logoSubtitle: "Strategic Consulting • International Trade • Washington, D.C.",
     logoAccent: "Minimal executive identity for international consulting",
     start: "Start a Project",
@@ -196,6 +196,32 @@ heroSub:
       ["Media & Entertainment", "Brand storytelling, bilingual communication, cultural events, and media strategy."],
       ["Consumer Products", "Product sourcing, private label development, trade documentation, and delivery coordination."]
     ],
+
+    tradeLabel: "International Trade",
+    tradeTitle: "Trade solutions from sourcing to delivery.",
+    tradeDesc:
+      "TransPac supports practical international trade execution for commercial buyers, project owners, and organizations sourcing products across borders.",
+    tradeCapabilities: [
+      ["Global Sourcing", "Identify manufacturers, product vendors, and commercial suppliers across Asia and relevant global markets."],
+      ["OEM / ODM", "Support customized product development, private label coordination, specification communication, and supplier follow-up."],
+      ["Commercial Procurement", "Coordinate pricing, product information, purchase documentation, and supplier communication."],
+      ["Logistics Coordination", "Support shipping planning, DDP/FOB communication, documentation organization, and delivery tracking."]
+    ],
+    networkLabel: "Global Network",
+    networkTitle: "Connecting North America and Asia.",
+    networkDesc:
+      "With a Washington, D.C. presence and cross-border business relationships, TransPac helps clients coordinate opportunities across the United States, China, Hong Kong, and broader international markets.",
+    network: ["Washington, D.C.", "United States", "China", "Hong Kong", "Asia", "Global Partners"],
+    downloadsLabel: "Downloads",
+    downloadsTitle: "Business materials for partners and clients.",
+    downloadsDesc:
+      "Download-ready materials can be prepared for business meetings, proposals, trade discussions, and institutional partnership conversations.",
+    downloads: [
+      ["Company Profile", "Corporate overview, services, leadership, and contact information."],
+      ["Capability Statement", "One-page business capability summary for professional and institutional use."],
+      ["Trade Capability Brief", "International trade, sourcing, procurement, and logistics capability overview."],
+      ["Service Brochure", "Consulting, trade, procurement, branding, and project delivery service summary."]
+    ],
     aboutLabel: "About TransPac",
     aboutTitle: "A consulting partner for a more connected market.",
     aboutP1:
@@ -208,19 +234,34 @@ heroSub:
       "This section highlights TransPac's representative capabilities across education exchange, media events, business consulting, market research, and branding strategy.",
     projects: [
       {
-        title: "U.S.-China Student Exchange Initiative",
-        desc: "Developed and coordinated a cross-cultural educational exchange program connecting U.S. students with academic institutions, cultural organizations, and immersive learning experiences in China.",
-        tag: "Education Consulting"
+        title: "Cross-Border Trade & Equipment Supply",
+        desc: "Supported international commercial procurement, supplier coordination, logistics planning, and delivery execution for commercial equipment and project-based product needs.",
+        tag: "International Trade"
       },
       {
-        title: "International Media & Cultural Event Planning",
-        desc: "Supported media-related events, cultural forums, VIP receptions, and international exchange activities through strategic planning, bilingual coordination, sponsorship structure, and project execution.",
-        tag: "Events & Media"
+        title: "Senior Living Development Support",
+        desc: "Provided planning, supplier sourcing, FF&E procurement support, and implementation coordination for senior living and care-related facility development.",
+        tag: "Senior Living"
       },
       {
-        title: "U.S. Market Research & Brand Positioning",
-        desc: "Provided consulting support for organizations entering the U.S. market through market analysis, business planning, localization strategy, branding direction, and partnership development.",
-        tag: "Business Consulting"
+        title: "Commercial Development & Procurement",
+        desc: "Assisted commercial clients with project planning, vendor matching, restaurant and hospitality equipment sourcing, and cross-border procurement coordination.",
+        tag: "Commercial Projects"
+      },
+      {
+        title: "U.S. Market Entry & Business Strategy",
+        desc: "Supported organizations entering the U.S. market through market research, business planning, localization strategy, branding direction, and partnership development.",
+        tag: "Business Advisory"
+      },
+      {
+        title: "International Education & Cultural Exchange",
+        desc: "Developed cross-cultural educational programs, institutional partnership concepts, study tour structures, and international learning experiences.",
+        tag: "Education"
+      },
+      {
+        title: "Branding, Media & Public Communication",
+        desc: "Supported organizations with bilingual communication, media positioning, brand storytelling, event planning, and public-facing content development.",
+        tag: "Branding & Media"
       }
     ],
     insightsLabel: "Insights & Research",
@@ -340,7 +381,7 @@ heroSub:
   },
   zh: {
     languageButton: "English",
-    nav: ["服务", "行业", "关于", "案例", "流程", "洞察", "优势", "联系"],
+    nav: ["服务", "行业", "贸易", "案例", "流程", "洞察", "优势", "下载", "联系"],
     logoSubtitle: "战略咨询 · 国际贸易 · 华盛顿特区",
     logoAccent: "面向机构客户的极简高端咨询品牌识别",
     start: "开始项目",
@@ -425,6 +466,32 @@ heroSub:
       ["媒体娱乐", "品牌叙事、双语传播、文化活动与媒体策略。"],
       ["消费品", "产品采购、自有品牌开发、贸易文件及交付协调。"]
     ],
+
+    tradeLabel: "国际贸易",
+    tradeTitle: "从供应商寻源到最终交付的贸易解决方案。",
+    tradeDesc:
+      "TransPac 为商业采购方、项目业主及跨境产品采购客户提供实用型国际贸易执行支持。",
+    tradeCapabilities: [
+      ["全球采购", "在亚洲及相关国际市场识别制造商、产品供应商及商业合作资源。"],
+      ["OEM / ODM", "支持定制产品开发、自有品牌协调、规格沟通与供应商跟进。"],
+      ["商业采购", "协调价格、产品信息、采购文件及供应商沟通。"],
+      ["物流协调", "支持运输规划、DDP/FOB 沟通、贸易文件整理及交付跟踪。"]
+    ],
+    networkLabel: "全球网络",
+    networkTitle: "连接北美与亚洲。",
+    networkDesc:
+      "TransPac 立足华盛顿特区，并依托跨境商业资源，帮助客户协调美国、中国、香港及更广泛国际市场中的合作机会。",
+    network: ["华盛顿特区", "美国", "中国", "香港", "亚洲", "全球合作伙伴"],
+    downloadsLabel: "下载中心",
+    downloadsTitle: "面向合作伙伴与客户的商务资料。",
+    downloadsDesc:
+      "我们可为商务会面、项目提案、贸易洽谈及机构合作准备统一风格的企业资料。",
+    downloads: [
+      ["公司介绍", "公司概况、服务内容、管理团队与联系方式。"],
+      ["能力声明", "适用于专业客户及机构合作的一页式企业能力概览。"],
+      ["国际贸易能力介绍", "国际贸易、供应商寻源、采购及物流能力概览。"],
+      ["服务手册", "咨询、贸易、采购、品牌与项目落地服务摘要。"]
+    ],
     aboutLabel: "关于 TransPac",
     aboutTitle: "连接市场与机会的咨询伙伴。",
     aboutP1:
@@ -437,19 +504,34 @@ heroSub:
       "这里展示 TransPac 在教育交流、媒体活动、商业咨询、市场研究与品牌策划方面的代表性项目能力。",
     projects: [
       {
-        title: "中美学生交流项目",
-        desc: "设计并协调跨文化教育交流项目，将美国学生与中国高校、文化机构和沉浸式学习体验连接起来。",
-        tag: "教育咨询"
+        title: "跨境贸易与商业设备供应",
+        desc: "围绕商业设备及项目型产品需求，提供国际采购、供应商协调、物流规划与交付执行支持。",
+        tag: "国际贸易"
       },
       {
-        title: "国际媒体与文化活动策划",
-        desc: "围绕媒体活动、文化论坛、VIP 招待会与国际交流项目，提供战略策划、双语协调、赞助结构设计与执行支持。",
-        tag: "活动与媒体"
+        title: "养老产业项目开发支持",
+        desc: "为养老及护理相关设施项目提供项目规划、供应商寻源、FF&E 采购支持及落地协调服务。",
+        tag: "养老产业"
       },
       {
-        title: "美国市场调研与品牌定位",
-        desc: "通过市场分析、商业计划、本土化策略、品牌方向与合作伙伴拓展，支持机构进入或拓展美国市场。",
+        title: "商业项目开发与采购",
+        desc: "协助商业客户进行项目规划、供应商匹配、餐饮及酒店设备采购与跨境供应链协调。",
+        tag: "商业项目"
+      },
+      {
+        title: "美国市场进入与商业战略",
+        desc: "通过市场研究、商业计划、本土化策略、品牌方向与合作伙伴拓展，支持机构进入或拓展美国市场。",
         tag: "商业咨询"
+      },
+      {
+        title: "国际教育与文化交流",
+        desc: "设计跨文化教育项目、机构合作方案、学生访学结构及国际化学习体验。",
+        tag: "教育交流"
+      },
+      {
+        title: "品牌、媒体与公共传播",
+        desc: "为机构提供双语传播、媒体定位、品牌叙事、活动策划及对外内容支持。",
+        tag: "品牌媒体"
       }
     ],
     insightsLabel: "洞察与研究",
@@ -613,6 +695,10 @@ export default function TranspacWebsite() {
     console.assert(content.zh.industries.length === 9, "Expected nine Chinese industries");
     console.assert(content.en.tradeProcess.length === 8, "Expected eight English trade process steps");
     console.assert(content.zh.tradeProcess.length === 8, "Expected eight Chinese trade process steps");
+    console.assert(content.en.tradeCapabilities.length === 4, "Expected four English trade capabilities");
+    console.assert(content.zh.tradeCapabilities.length === 4, "Expected four Chinese trade capabilities");
+    console.assert(content.en.downloads.length === 4, "Expected four English downloads");
+    console.assert(content.zh.downloads.length === 4, "Expected four Chinese downloads");
     console.assert(content.zh.leaders.length === 3, "Expected three Chinese leaders");
     console.assert(Object.values(TEAM_IMAGES).every((path) => typeof path === "string" && path.startsWith("/")), "Team image paths must be public-root paths");
     return true;
@@ -657,7 +743,7 @@ export default function TranspacWebsite() {
               {t.languageButton}
             </button>
             {t.nav.map((item, index) => {
-              const hrefs = ["#services", "#industries", "#about", "#projects", "#process", "#insights", "#why", "#contact"];
+              const hrefs = ["#services", "#industries", "#trade", "#projects", "#process", "#insights", "#why", "#downloads", "#contact"];
               return <a key={item} href={hrefs[index]} className="hover:text-[#14213d]">{item}</a>;
             })}
           </nav>
@@ -757,6 +843,41 @@ export default function TranspacWebsite() {
                   <p className="mt-3 text-sm leading-7 text-white/70">{desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="trade" className="px-6 py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+              <div>
+                <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6a94f]">{t.tradeLabel}</div>
+                <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">{t.tradeTitle}</h2>
+                <p className="mt-5 text-lg leading-8 text-[#14213d]/65">{t.tradeDesc}</p>
+                <div className="mt-8 rounded-[2rem] bg-[#14213d] p-7 text-white shadow-xl">
+                  <div className="text-sm uppercase tracking-[0.24em] text-[#d6b36a]">{t.networkLabel}</div>
+                  <h3 className="mt-3 text-2xl font-semibold">{t.networkTitle}</h3>
+                  <p className="mt-4 text-sm leading-7 text-white/70">{t.networkDesc}</p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {t.network.map((item) => (
+                      <span key={item} className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs text-white/75">{item}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="grid gap-5 sm:grid-cols-2">
+                {t.tradeCapabilities.map(([title, desc]) => (
+                  <Card key={title} className="transition hover:-translate-y-1 hover:shadow-xl">
+                    <div className="p-7">
+                      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#14213d] text-white">
+                        <Icon type="globe" size={21} />
+                      </div>
+                      <h3 className="text-xl font-semibold">{title}</h3>
+                      <p className="mt-3 text-sm leading-7 text-[#14213d]/65">{desc}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -950,6 +1071,29 @@ export default function TranspacWebsite() {
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button className="bg-[#d6b36a] text-[#14213d] hover:bg-[#caa85f]">{t.contact}</Button>
               <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10">{t.explore}</Button>
+            </div>
+          </div>
+        </section>
+
+        <section id="downloads" className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6a94f]">{t.downloadsLabel}</div>
+                <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">{t.downloadsTitle}</h2>
+              </div>
+              <p className="max-w-xl text-base leading-7 text-[#14213d]/60">{t.downloadsDesc}</p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-4">
+              {t.downloads.map(([title, desc]) => (
+                <div key={title} className="rounded-[2rem] border border-[#14213d]/10 bg-[#f8f5ef] p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-[#14213d] text-white">
+                    <Icon type="spark" size={18} />
+                  </div>
+                  <h3 className="text-lg font-semibold">{title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-[#14213d]/60">{desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
