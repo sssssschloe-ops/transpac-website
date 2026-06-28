@@ -130,7 +130,7 @@ heroSub:
 ["North America & Asia","Global Network"],
 ["Consulting + Trade","Core Services"],
 ["End-to-End","Project Delivery"]
-]
+],
     strengths: [
       "U.S. market insight and local information consulting",
       "Cross-border business and education expertise",
@@ -313,7 +313,7 @@ heroSub:
   zh: {
     languageButton: "English",
     nav: ["服务", "关于", "案例", "流程", "洞察", "优势", "联系"],
-    logoSubtitle: "精品咨询 · 华盛顿特区",
+    logoSubtitle: "战略咨询 · 国际贸易 · 华盛顿特区",
     logoAccent: "面向机构客户的极简高端咨询品牌识别",
     start: "开始项目",
     badge: "战略咨询 · 国际贸易 · 项目落地",
@@ -331,7 +331,7 @@ heroSub:
 ["北美 · 亚洲","全球网络"],
 ["咨询 + 国际贸易","核心业务"],
 ["全流程","项目交付"]
-]
+],
     strengths: [
       "美国本土市场洞察与信息咨询能力",
       "跨境商业与国际教育项目经验",
@@ -916,4 +916,3 @@ const SectionIntro = ({ label, title, desc }) => (
     {desc ? <p className="mt-5 text-lg leading-8 text-[#14213d]/65">{desc}</p> : null}
   </div>
 );
-
