@@ -312,21 +312,21 @@ heroSub:
       },
       {
         name: "Ruohan Li",
-        role: "Director of Consulting & Strategy",
+        role: "Director of Cross-Border Trade",
         image: TEAM_IMAGES.ruohan,
-        summary: "Leads consulting framework design, strategic analysis, market research, education consulting, and advisory deliverables for institutional and international projects.",
+        summary: "Leads TransPac's cross-border trade initiatives, supplier coordination, international sourcing, and global commercial partnerships while supporting clients with practical trade execution.",
         education: "Columbia University Teachers College",
         degree: "Master of Arts in Sociology and Education, Concentration in Policy",
-        focus: "Education consulting, international education planning, cross-cultural initiatives, brand strategy, program development, international communication."
+        focus: "Cross-border trade, international sourcing, supplier coordination, commercial development, international business communication, project execution."
       },
       {
         name: "Yunze Li",
-        role: "Director of Cross-Border Trade & Finance",
+        role: "Management Consultant",
         image: TEAM_IMAGES.yunze,
-        summary: "Manages project execution, operational coordination, client communication, financial planning support, and service delivery quality across consulting and event-based projects.",
+        summary: "Provides management consulting services focused on organizational planning, operational coordination, project management, and strategic execution for cross-border business initiatives.",
         education: "Johns Hopkins University SAIS",
         degree: "Master of Arts in International Economics and Finance",
-        focus: "International business consulting, strategic planning, financial analysis, operational management, cross-border project coordination."
+        focus: "Management consulting, business strategy, operational management, project coordination, organizational planning, international business consulting."
       }
     ],
     networkTitle: "Extended Professional Network",
@@ -575,21 +575,21 @@ heroSub:
       },
       {
         name: "李若涵",
-        role: "咨询与战略总监",
+        role: "跨境国际贸易总监",
         image: TEAM_IMAGES.ruohan,
-        summary: "负责咨询服务体系设计、战略分析、市场研究、教育咨询与国际项目顾问成果交付。",
+        summary: "负责公司跨境国际贸易业务、国际供应商协调、全球采购支持及国际商务合作，为客户提供跨境贸易整体解决方案。",
         education: "哥伦比亚大学教育学院",
-        degree: "社会学与教育文学硕士，政策方向",
-        focus: "教育咨询、国际教育规划、跨文化项目、品牌策略、项目开发与国际传播。"
+        degree: "社会学与教育文学硕士（政策方向）",
+        focus: "跨境国际贸易、国际采购、供应商协调、国际商务合作、项目执行、全球市场拓展。"
       },
       {
         name: "李昀泽",
-        role: "跨境贸易与金融总监",
+        role: "管理咨询顾问",
         image: TEAM_IMAGES.yunze,
-        summary: "负责项目执行、运营协调、客户沟通、财务规划支持及咨询与活动项目的交付质量管理。",
+        summary: "负责企业管理咨询、运营优化、项目协调及战略执行，为客户提供专业管理咨询与项目支持。",
         education: "约翰霍普金斯大学高级国际研究学院",
         degree: "国际经济与金融文学硕士",
-        focus: "国际商业咨询、战略规划、财务分析、运营管理与跨境项目协调。"
+        focus: "管理咨询、企业运营、战略规划、项目管理、组织协调、国际商务咨询。"
       }
     ],
     networkTitle: "灵活专业网络",
