@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 const TEAM_IMAGES = {
   qibao: "/qibao.jpg",
   ruohan: "/ruohan.jpg",
-  yunze: "/yunze.pnp.jpg"
+  taofeng: "/taofeng.jpg"
 };
 
 const Icon = ({ type = "globe", className = "", size = 22 }) => {
@@ -320,13 +320,13 @@ heroSub:
         focus: "Cross-border trade, international sourcing, supplier coordination, commercial development, international business communication, project execution."
       },
       {
-        name: "Yunze Li",
-        role: "Management Consultant",
-        image: TEAM_IMAGES.yunze,
-        summary: "Provides management consulting services focused on organizational planning, operational coordination, project management, and strategic execution for cross-border business initiatives.",
-        education: "Johns Hopkins University SAIS",
-        degree: "Master of Arts in International Economics and Finance",
-        focus: "Management consulting, business strategy, operational management, project coordination, organizational planning, international business consulting."
+        name: "Taofeng Wang",
+        role: "Director of Consulting & Strategy",
+        image: TEAM_IMAGES.taofeng,
+        summary: "Leads TransPac's consulting practice by overseeing consulting delivery, research coordination, strategy development, and team supervision. Works closely with clients to transform business objectives into structured consulting solutions while ensuring high-quality project execution and cross-functional collaboration.",
+        education: "Hofstra University",
+        degree: "Master of Arts in Communications",
+        focus: "Consulting delivery, research coordination, strategy development, team supervision, journalism and communication, television news production, international communication, media studies, organizational communication, business consulting."
       }
     ],
     networkTitle: "Extended Professional Network",
@@ -583,13 +583,13 @@ heroSub:
         focus: "跨境国际贸易、国际采购、供应商协调、国际商务合作、项目执行、全球市场拓展。"
       },
       {
-        name: "李昀泽",
-        role: "管理咨询顾问",
-        image: TEAM_IMAGES.yunze,
-        summary: "负责企业管理咨询、运营优化、项目协调及战略执行，为客户提供专业管理咨询与项目支持。",
-        education: "约翰霍普金斯大学高级国际研究学院",
-        degree: "国际经济与金融文学硕士",
-        focus: "管理咨询、企业运营、战略规划、项目管理、组织协调、国际商务咨询。"
+        name: "王涛峰",
+        role: "咨询与战略总监",
+        image: TEAM_IMAGES.taofeng,
+        summary: "负责公司咨询项目整体交付、研究协调、战略制定及团队管理工作，为客户提供专业咨询方案、商业战略支持及项目执行管理，确保咨询项目高质量落地实施。",
+        education: "霍夫斯特拉大学",
+        degree: "传播学文学硕士",
+        focus: "咨询项目交付、研究协调、战略制定、团队管理、新闻传播、电视新闻制作、国际传播、媒体研究、组织沟通、商业咨询。"
       }
     ],
     networkTitle: "灵活专业网络",
@@ -633,7 +633,7 @@ heroSub:
 };
 
 const Portrait = ({ person, labels, index }) => {
-  const imagePosition = ["center 18%", "center 12%", "center 8%"]; 
+  const imagePosition = ["center 18%", "center 12%", "center center"]; 
 
   return (
     <div className="rounded-[2rem] border border-[#14213d]/10 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
